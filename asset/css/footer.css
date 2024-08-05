@@ -1,0 +1,32 @@
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+.footer ul li::before {
+    content: "•";
+    color: #8bc34a;
+    display: none;
+    margin-right: 5px;
+}
+.footer ul li:hover::before {
+    display: inline-block;
+}
+.footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer ul li a:hover {
+    color: #8bc34a;
+}
+.payment-icons img {
+    height: 20px;
+}
+.no-wrap {
+    white-space: nowrap;
+}
+.footer {
+    background-color: black;
+}
+.footer p, .footer ul {
+    font-size: 0.9rem; 
+}
