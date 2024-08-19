@@ -181,5 +181,9 @@
     "contact.name_label": "Tên *",
     "contact.email_label": "Email *",
     "contact.message_label": "Tin nhắn *",
-    "contact.submit_button": "Gửi"
+    "contact.submit_button": "Gửi",
+    "globalvi": "Tiếng Việt",
+    "globalen": "Tiếng Anh",
+    "globalac": "Tài khoản",
+    "globalout": "Đăng xuất"
 }

@@ -1,10 +1,10 @@
 {
     "home": "Home",
-    "about":"about",
-    "product":"product",
-    "news":"news",
-    "map":" map",
-    "contact": "contact",
+    "about":"About",
+    "product":"Product",
+    "news":"News",
+    "map":" Map",
+    "contact": "Contact",
     "cosmetics":"cosmetics",
     "jewelry":"jewelry",
     "accessories":"accessories",
@@ -181,5 +181,9 @@
     "contact.name_label": "Name *",
     "contact.email_label": "Email *",
     "contact.message_label": "Message *",
-    "contact.submit_button": "Submit"
+    "contact.submit_button": "Submit",
+    "globalvi": "Vietnamese",
+    "globalen": "English",
+    "globalac": "Account",
+    "globalout": "Log out"
 }
