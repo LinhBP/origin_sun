@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const blogList = document.getElementById('blogList');
-
+    const gridViewBtn = document.getElementById('gridViewBtn');
+    const listViewBtn = document.getElementById('listViewBtn');
+    const gridViewBtnBottom = document.getElementById('gridViewBtnBottom');
+    const listViewBtnBottom = document.getElementById('listViewBtnBottom');
+    
     const posts = [
         {
             id: 1,
@@ -54,20 +58,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     localStorage.setItem('posts', JSON.stringify(posts));
 
-    function displayPosts(posts) {
-        blogList.innerHTML = ''; // Xóa nội dung cũ nếu có
+    function displayPosts(posts, viewType = 'grid') {
+        blogList.innerHTML = ''; // Clear existing content
+        
+        blogList.className = viewType === 'grid' ? 'grid grid-cols-1 md:grid-cols-2 gap-4' : 'grid grid-cols-1 gap-4';
+
         posts.forEach(post => {
             const postHtml = `
-                <div class="bg-white rounded-lg overflow-hidden transition duration-300 ease-in-out hover:shadow-lg cursor-pointer">
-                    <img src="${post.image}" class="w-full" data-i18n-alt="${post.altKey}">
-                    <div class="p-4">
+                <div class="bg-white rounded-lg overflow-hidden transition duration-300 ease-in-out hover:shadow-lg cursor-pointer ${
+                    viewType === 'list' ? 'flex' : ''
+                }">
+                    <img src="${post.image}" class="${viewType === 'list' ? 'w-48 h-auto object-cover' : 'w-full'}" data-i18n-alt="${post.altKey}">
+                    <div class="p-4 ${viewType === 'list' ? 'flex-grow' : ''}">
                         <a href="blog_detail.html?post_id=${post.id}" class="block hover:underline">
                             <h2 class="font-bold text-xl mb-2" data-i18n="${post.titleKey}">${translations[currentLanguage][post.titleKey]}</h2>
                         </a>
-                        <hr class="mb-4 border-gray-200">
-                        <p class="text-gray-700 text-base" data-i18n="${post.bodyKey}">${translations[currentLanguage][post.bodyKey]}</p>
-                        <hr class="my-4 border-gray-200">
-                        <div class="flex justify-between text-gray-400 hover:text-black">
+                        <p class="text-gray-700 text-base mb-2" data-i18n="${post.bodyKey}">${translations[currentLanguage][post.bodyKey]}</p>
+                        <div class="text-gray-400 hover:text-black">
                             <a href="blog_detail.html?post_id=${post.id}" class="hover:text-black" data-i18n="read_more"></a>
                             <span data-i18n="${post.commentsKey}">${translations[currentLanguage][post.commentsKey]}</span>
                         </div>
@@ -80,5 +87,10 @@ document.addEventListener('DOMContentLoaded', function() {
         translatePage(); 
     }
 
-    displayPosts(posts);
+    displayPosts(posts, 'grid'); // Default to grid view
+
+    gridViewBtn.addEventListener('click', () => displayPosts(posts, 'grid'));
+    listViewBtn.addEventListener('click', () => displayPosts(posts, 'list'));
+    gridViewBtnBottom.addEventListener('click', () => displayPosts(posts, 'grid'));
+    listViewBtnBottom.addEventListener('click', () => displayPosts(posts, 'list'));
 });
