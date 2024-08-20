@@ -1,224 +1,185 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<link href="../asset/css/product-detail.css" rel="stylesheet">
-<title>Product detail</title>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="../asset/css/product-detail.css" rel="stylesheet">
+    <title>Product detail</title>
+</head>
 <body>
-  <body >
-    <div class="w-full mb-10 border-b " id="content"></div>
+    <div class="w-full mb-10 border-b" id="content"></div>
     <div class="mx-36">
-      <div class="flex mb-10">
-        <div id="product_slider" class="flex ">
-          <div class="row items-center">
-            <a class="prev mx-auto " onclick="plusSlides(-1)">▲</a>
-            <div class="thumb overflow-scroll ml-5 ">
-                <img class="slider-img demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s"  onclick="currentSlide(1)" alt="">
-                <img class="slider-img demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s"  onclick="currentSlide(2)" alt="">
-                <img class="slider-img demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s"  onclick="currentSlide(3)" alt="">
-                <img class="slider-img demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s"  onclick="currentSlide(4)" alt="">
-                <img class="slider-img demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s"  onclick="currentSlide(5)" alt="">
-                <img class="slider-img demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s"  onclick="currentSlide(6)" alt="">
-                <img class="slider-img demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s"  onclick="currentSlide(6)" alt="">
-                <img class="slider-img demo cursor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s"  onclick="currentSlide(6)" alt="">
-            </div>
-            <a class="mx-auto next " onclick="plusSlides(1)">▼</a>
-          </div>
-      
-        <div class="">
-          <div class="mySlides  ">
-            <img class="slider-img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s" >
-          </div>
-        
-          <div class="mySlides">
-            <img class="slider-img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" >
-          </div>
-        
-          <div class="mySlides">
-            <img class="slider-img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" >
-          </div>
-            
-          <div class="mySlides">
-            <img class="slider-img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" >
-          </div>
-        
-          <div class="mySlides">
-            <img class="slider-img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" >
-          </div>
-            
-          <div class="mySlides">
-            <img class="slider-img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" >
-          </div>
-        </div>
-      </div>
-        <div class="ml-24 w-96">
-          <div class="mb-2 h1 font-bold text-xl">Title</div>
-          <div class="mb-2"> brand </div>
-          <div class="mb-2"> price </div>
-          <div class="mb-2 overflow-scroll h-24"> description description description description description description description descriptiondescription description description descriptiondescription description description descriptiondescription description description descriptiondescription description description descriptiondescription description description description</div>
-          
-          <form class="mb-2 max-w-sm mx-auto">
-            <label data-i18n="productdetail-color" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Màu sắc</label>
-            <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-              <option selected>select</option>
-              <option data-i18n="red" ></option>
-              <option data-i18n="green" ></option>
-              <option data-i18n="blue" ></option>
-            </select>
-          </form>
-          <form class="mb-2 max-w-sm mx-auto">
-            <label data-i18n="productdetail-size" for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">kích cỡ</label>
-            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-              <option selected>select</option>
-              <option>xl</option>
-              <option>l</option>
-              <option>s</option>
-              <option>xs</option>
-            </select>
-          </form>
-      
-          <div class="btn-cluster mt-4">
-            <button data-i18n="buy_now" class="mr-2 bg-white py-2 px-4 rounded-xl border font-bold">Mua hàng</button>
-            <button class="mr-2 like-btn text-white py-2 px-4 rounded-xl">♥</button>
-            <button class="mr-2 rl-btn bg-white py-2 px-4 rounded-xl border font-bold w-10 h-10"><img class="reload-icon" src="../asset/icon/reload-svgrepo-com.svg" alt=""></button>
-          </div>
-        </div>
-      </div>
-  
-      <div class="flex">
-        <div>
-          <div class="w-full mr-4  text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
-            <ul class="flex flex-wrap -mb-px">
-              <li class="me-2">
-                  <a data-i18n="product-info" href="#" id="tab1" onclick="showTabContent(event, 'content1')" class="inline-block p-4 text-black border-b-2 border-black rounded-t-lg active" aria-current="page">Thông tin sản phẩm</a>
-              </li>
-              <li class="me-2">
-                  <a data-i18n="feature" href="#" id="tab2" onclick="showTabContent(event, 'content2')" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Đặc điểm nổi bật</a>
-              </li>
-              <li class="me-2">
-                  <a data-i18n="review" href="#" id="tab3" onclick="showTabContent(event, 'content3')" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Đánh giá</a>
-              </li>
-          </ul>
-          </div>
-  
-          <div id="content1" class="tab-content">
-            <div class="flex mt-10" >
-              <img class="w-36 h-36 mr-4 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
-              <div>
-                <div>title</div>
-              <p>
-                description description description description description description description description description description description description ddescription description description description description d
-              </p>
-              </div>
-            </div>
-    
-            <div class="flex flex-row-reverse text-right mt-10" >
-              <img class="w-36 h-36 ml-4 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
-              <div>
-                <div>title</div>
-              <p>
-                description description description description description description description description description description description description ddescription description description description description d
-              </p>
-              </div>
-            </div>
-    
-            <div class="flex mt-10" >
-              <img class="w-36 h-36 mr-4 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
-              <div>
-                <div>title</div>
-              <p>
-                description description description description description description description description description description description description ddescription description description description description d
-              </p>
-              </div>
-            </div>
-    
-            <div class="flex flex-row-reverse text-right mt-10" >
-              <img class="w-36 h-36 ml-4 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
-              <div>
-                <div>title</div>
-              <p>
-                description description description description description description description description description description description description ddescription description description description description d
-              </p>
-              </div>
-            </div>
-          </div>
-          <div id="content2" class="tab-content hidden">
-            <div class="flex mt-10" >
-              <img class="w-36 h-36 mr-4 " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
-              <div>
-                <div>title</div>
-              <p>
-                description description description description description description description description description description description description ddescription description description description description d
-              </p>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class=" ml-20 mr-36">
-          <div class="mb-8">
-            <div class="  text-sm font-medium text-center text-gray-500 border-b border-gray-200">
-              <ul class="flex flex-wrap -mb-px">
-                <li class="me-2">
-                    <div data-i18n="best-selling" class=" whitespace-nowrap inline-block p-4 text-black border-b-2 border-black rounded-t-lg active" >sản phẩm bán chạy</div>
-              </ul>
-            </div>
-    
-            <div class="flex mt-4 border-b pb-2 ">
-                <img class="h-20 w-20 mr-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
-                <div>
-                  <div>title</div>
-                  <div>♥♥♥♥♥ </div>
-                  <div>price</div>
+        <div class="flex mb-10">
+            <div id="product_slider" class="flex ">
+                <div class="row items-center">
+                    <a class="prev mx-auto" onclick="plusSlides(-1)">▲</a>
+                    <div class="thumb overflow-scroll ml-5">
+                    </div>
+                    <a class="mx-auto next" onclick="plusSlides(1)">▼</a>
+                </div>
+                <div class="">
+                    <div class="mySlides">
+                        <img id="productImage" class="slider-img1" src="" alt="Product Image">
+                    </div>
                 </div>
             </div>
-    
-            <div class="flex mt-4 border-b pb-2 ">
-              <img class="h-20 w-20 mr-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
-              <div>
-                <div>title</div>
-                <div>♥♥♥♥♥ </div>
-                <div>price</div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="mb-8">
-            <div class="  text-sm font-medium text-center text-gray-500 border-b border-gray-200">
-              <ul class="flex flex-wrap -mb-px">
-                <li class="me-2">
-                    <a data-i18n="most-buy" class=" whitespace-nowrap inline-block p-4 text-black border-b-2 border-black rounded-t-lg active" aria-current="page">sản phẩm mua nhiều </a>
-              </ul>
-            </div>
-    
-            <div class="flex mt-4 border-b pb-2 ">
-                <img class="h-20 w-20 mr-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
-                <div>
-                  <div>title</div>
-                  <div>♥♥♥♥♥ </div>
-                  <div>price</div>
-                </div>
-            </div>
-    
-            <div class="flex mt-4 border-b pb-2 ">
-              <img class="h-20 w-20 mr-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
-              <div>
-                <div>title</div>
-                <div>♥♥♥♥♥ </div>
-                <div>price</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="pagination" class="flex justify-center mt-8">
-          <button id="prev-btn" class="px-4 py-2 mx-1 bg-gray-300 rounded">Previous</button>
-          <div id="page-numbers" class="flex space-x-1"></div>
-          <button id="next-btn" class="px-4 py-2 mx-1 bg-gray-300 rounded">Next</button>
-      </div>
-    </div>
-  </body>
-  <script src="../asset/scripts/product_detail.js"></script>
-  <script src="../asset/scripts/navbar.js"></script>
-  <script src="../asset/scripts/translate.js"> </script>
+            <div class="ml-96 w-96">
+                <div id="productTitle" class="mb-2 h1 font-bold text-xl"></div>
+                <div id="productBrand" class="mb-2"></div>
+                <div id="productPrice" class="mb-2"></div>
+                <div id="productDesc" class="mb-2 overflow-scroll h-24"></div>
 
+                <form class="mb-2 max-w-sm mx-auto">
+                    <label data-i18n="productdetail-color" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                    <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>select</option>
+                        <option data-i18n="red"></option>
+                        <option data-i18n="green"></option>
+                        <option data-i18n="blue"></option>
+                    </select>
+                </form>
+                <form class="mb-2 max-w-sm mx-auto">
+                    <label data-i18n="productdetail-size" for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                    <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>select</option>
+                        <option>xl</option>
+                        <option>l</option>
+                        <option>s</option>
+                        <option>xs</option>
+                    </select>
+                </form>
+
+                <div class="btn-cluster mt-4">
+                    <button id="buyButton" data-i18n="buy_now" class="mr-2 bg-white py-2 px-4 rounded-xl border font-bold"></button>
+                    <button class="mr-2 like-btn text-white py-2 px-4 rounded-xl">♥</button>
+                    <button class="mr-2 rl-btn bg-white py-2 px-4 rounded-xl border font-bold w-10 h-10">
+                        <img class="reload-icon" src="../asset/icon/reload-svgrepo-com.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div>
+                <!-- Tab content -->
+                <div class="w-full mr-4 text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+                    <ul class="flex flex-wrap -mb-px">
+                        <li class="me-2">
+                            <a data-i18n="product-info" href="#" id="tab1" onclick="showTabContent(event, 'content1')" class="inline-block p-4 text-black border-b-2 border-black rounded-t-lg active" aria-current="page"></a>
+                        </li>
+                        <li class="me-2">
+                            <a data-i18n="feature" href="#" id="tab2" onclick="showTabContent(event, 'content2')" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"></a>
+                        </li>
+                        <li class="me-2">
+                            <a data-i18n="review" href="#" id="tab3" onclick="showTabContent(event, 'content3')" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="content1" class="tab-content">
+                    <div class="flex mt-10">
+                        <img id="infoImage1" class="w-36 h-36 mr-4" src="" alt="">
+                        <div>
+                            <div id="infoTitle1"></div>
+                            <p id="infoDesc1"></p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row-reverse text-right mt-10">
+                        <img id="infoImage2" class="w-36 h-36 ml-4" src="" alt="">
+                        <div>
+                            <div id="infoTitle2"></div>
+                            <p id="infoDesc2"></p>
+                        </div>
+                    </div>
+
+                    <div class="flex mt-10">
+                        <img id="infoImage3" class="w-36 h-36 mr-4" src="" alt="">
+                        <div>
+                            <div id="infoTitle3"></div>
+                            <p id="infoDesc3"></p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row-reverse text-right mt-10">
+                        <img id="infoImage4" class="w-36 h-36 ml-4" src="" alt="">
+                        <div>
+                            <div id="infoTitle4"></div>
+                            <p id="infoDesc4"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="content2" class="tab-content hidden">
+                    <div class="flex mt-10">
+                        <img id="featureImage" class="w-36 h-36 mr-4" src="" alt="">
+                        <div>
+                            <div id="featureTitle"></div>
+                            <p id="featureDesc"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ml-20 mr-36">
+                <div class="mb-8">
+                    <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200">
+                        <ul class="flex flex-wrap -mb-px">
+                            <li class="me-2">
+                                <div data-i18n="best-selling" class="whitespace-nowrap inline-block p-4 text-black border-b-2 border-black rounded-t-lg active"></div>
+                        </ul>
+                    </div>
+
+                    <div class="flex mt-4 border-b pb-2">
+                        <img class="h-20 w-20 mr-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
+                        <div>
+                            <div></div>
+                            <div>♥♥♥♥♥</div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="flex mt-4 border-b pb-2">
+                        <img class="h-20 w-20 mr-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
+                        <div>
+                            <div></div>
+                            <div>♥♥♥♥♥</div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200">
+                        <ul class="flex flex-wrap -mb-px">
+                            <li class="me-2">
+                                <a data-i18n="most-buy" class="whitespace-nowrap inline-block p-4 text-black border-b-2 border-black rounded-t-lg active" aria-current="page"></a>
+                        </ul>
+                    </div>
+
+                    <div class="flex mt-4 border-b pb-2">
+                        <img class="h-20 w-20 mr-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
+                        <div>
+                            <div></div>
+                            <div>♥♥♥♥♥</div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="flex mt-4 border-b pb-2">
+                        <img class="h-20 w-20 mr-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMSBkeOPAIuiJ9f8Eh8cjrGvJoYOqMk4GFA&s" alt="">
+                        <div>
+                            <div></div>
+                            <div>♥♥♥♥♥</div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../asset/scripts/product_detail.js"></script>
+    <script src="../asset/scripts/navbar.js"></script>
+    <script src="../asset/scripts/translate.js"></script>
+</body>
 </html>

@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../asset/output.css" rel="stylesheet">
-    <link href="../asset/css/navbar.css" rel="stylesheet">  
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="../asset/css/product-list.css" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <title>product</title>
@@ -17,7 +15,7 @@
         <img src="../asset/image/discount.png" alt="">
     </div>
 
-    <div class="flex ml-56">
+    <div class="flex ml-56 mb-10">
         <div class=" w-1/5" id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
             <h1 class=" flex text-xl font-semibold product-title"><img class="w-6 h-6 mr-2" src="../asset/icon/menu.svg" alt=""> <p id="product-catalog">danh mục sp</p></h1>
             <h2 id="accordion-collapse-heading-1">
@@ -89,17 +87,20 @@
             
             <div id="product-display-g" class="grid grid-cols-3 gap-4 place-items-center border-t border-b border-gray-300">
             </div>
-            <ul class="listPage">
-
-            </ul>
         </div>
     </div>
+
+    <div class="w-full" id="footer"></div>
+
+    <script src="../asset/scripts/footer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="../asset/scripts/navbar.js"></script>
     <script src="../asset/scripts/product.js"></script>
     <script src="../asset/scripts/init.js"></script>
     <script src="../asset/scripts/renderproduct-grid.js"></script>
     <script src="../asset/scripts/pagination.js"></script>
+    <script src="../asset/scripts/product-grid1.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="../asset/scripts/translate.js"></script>
 </body>
 </html>

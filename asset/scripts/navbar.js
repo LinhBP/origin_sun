@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         } else {
             accountMenu.innerHTML += `
-                <a href="login.html" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-i18n="globalin"></a>
+                <a href="login.html" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" data-i18n="login"></a>
             `;
         }
 

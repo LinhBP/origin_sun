@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
-<link href="../asset/css/cart.css" rel="stylesheet" />
-<link href="../asset/css/breadcrumb.css" rel="stylesheet" />
-<title>cart</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="../asset/css/cart.css" rel="stylesheet" />
+    <link href="../asset/css/breadcrumb.css" rel="stylesheet" />
+    <title>Cart</title>
+</head>
 <body>
     <div class="w-full" id="content"></div>
     <div class="breadcrumb">
-        <p data-i18n="home" class="breaditem"></p> 
+        <p data-i18n="home" class="breaditem"></p>
         <p class="mx-2">></p>
-        <p data-i18n="cart" class="breadcrumb-active"></p>
+        <p data-i18n="cart-title" class="breadcrumb-active"></p>
     </div>
-    
-    <h1 class="text-5xl font-semibold page mx-36 mt-4 flex ">
+
+    <h1 class="text-5xl font-semibold page mx-36 mt-4 flex">
         <p data-i18n="cart-title"></p>
     </h1>
     <div id="table" class="mx-36 mt-4">
@@ -22,79 +24,35 @@
             <thead class="bg-gray-200">
                 <tr>
                     <th class="px-6 py-3 border-b border-gray-300 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Column 1
+                        Product
                     </th>
                     <th class="px-6 py-3 border-b border-gray-300 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Column 2
+                        Brand
                     </th>
                     <th class="px-6 py-3 border-b border-gray-300 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Column 3
+                        Price
                     </th>
                     <th class="px-6 py-3 border-b border-gray-300 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Column 4
+                        Image
                     </th>
                     <th class="px-6 py-3 border-b border-gray-300 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Column 5
+                        Quantity
                     </th>
                     <th class="px-6 py-3 border-b border-gray-300 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Column 6
+                        Actions
                     </th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="border-b odd:bg-white">
-                    <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                        Data 1
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 2
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 3
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 4
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 5
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 6
-                    </td>
-                </tr>
-        
-                <tr class="border-b odd:bg-white">
-                    <td class=" px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                        Data 1
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 2
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 3
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 4
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 5
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Data 6
-                    </td>
-                </tr>
+                <!-- Cart items-->
             </tbody>
         </table>
-    
-        <div class="btn-cluster mt-4 flex flex-row-reverse">
-            <button data-i18n="cart-update" class="mr-2 green-btn py-2 px-4 border text-gray-100"></button>
-            <button data-i18n="cart-delete" class="mr-2 blk-btn py-2 px-4 border text-gray-300"></button>
-            <button data-i18n="cart-continue" class="mr-2 blk-btn py-2 px-4 border text-gray-300"></button>
-        </div>
     </div>
 
     <script src="../asset/scripts/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-    <script src="../asset/scripts/product_detail.js"></script>
+    <script src="../asset/scripts/cart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="../asset/scripts/translate.js"></script>
-</body>  
+</body>
+</html>
