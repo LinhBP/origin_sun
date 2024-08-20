@@ -1,15 +1,10 @@
-// renderProducts.js
-document.addEventListener('DOMContentLoaded', () => {
-    const products = JSON.parse(localStorage.getItem('products'));
+function displayProducts(productsToDisplay) {
+    const productDisplay = document.getElementById('product-display-g');
+    productDisplay.innerHTML = ''; // Clear previous content
 
-    if (products) {
-        const productGrid = document.querySelector('.grid');
-
-        products.forEach(product => {
-            const productDiv = document.createElement('div');
-            productDiv.classList.add('item', 'h-96', 'w-56', 'py-6', 'mx-auto');
-
-            productDiv.innerHTML = `
+    productsToDisplay.forEach(product => {
+        const productElement = `
+            <div class=" product p-4 mb-4 flex flex-col items-center">
                 <img class="mx-auto w-40" src="${product.image}" alt="${product.title}">
                 <div class="justify-between">
                     <div class="mx-auto text-center">
@@ -17,12 +12,27 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h2 class="text-lg font-semibold mt-2">${product.title}</h2>
                         <div class="mt-4">${product.price}</div>
                         <div class="btn-cluster mx-auto mt-4">
-                            <button data-i18n="buy_now"class=" green-btn text-white border mr-2 py-2 px-4 rounded-lg" >${product.buttonText}</button>
+                            <button data-i18n="buy_now" class="green-btn text-white border mr-2 py-2 px-4 rounded-lg">${product.buttonText}</button>
                         </div>
                     </div>
                 </div>
-            `;
-            productGrid.appendChild(productDiv);
-        });
-    }
-});
+            </div>
+        `;
+        productDisplay.innerHTML += productElement;
+    });
+}
+
+function filterProducts(category) {
+    const filteredProducts = products.filter(product => product.category === category);
+    displayProducts(filteredProducts);
+}
+
+// Display all products when the page loads
+window.onload = function() {
+    displayProducts(products);
+};
+
+function filterProductstag(tag) {
+    const filteredProductstag = products.filter(product => product.tag === tag);
+    displayProducts(filteredProductstag);
+}

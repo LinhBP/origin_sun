@@ -30,8 +30,8 @@
             </h2>
             <div id="accordion-collapse-body-1" class="hidden " aria-labelledby="accordion-collapse-heading-1">
                 <ul class="ps-5 ml-4 text-gray-500 list-disc">
-                    <li class="mb-4"><a class=" hover:underline ">mỹ phẩm a</a></li>
-                    <li class="mb-4"><a class=" hover:underline ">mỹ phẩm b</a></li>
+                    <li onclick="filterProducts('a')" class="mb-4"><a class=" hover:underline "> a</a></li>
+                    <li onclick="filterProducts('b')" class="mb-4"><a class=" hover:underline "> b</a></li>
                 </ul>
             </div>
             <h2 id="accordion-collapse-heading-2">
@@ -70,11 +70,9 @@
             <div>
                 <h1 class="border-b pb-2 border-gray-300 text-xl font-semibold product-title">tag</h1>
                 <div class="flex mt-4 flex-wrap justify-start items-center space-x-1 gap-y-1 ">                    
-                    <div class="py-1 px-2.5 tag border-gray-500 text-xs text-gray-500 font-medium hover:bg-gray-500 hover:text-white">Disabled</div>
-                    <div class="py-1 px-2.5 tag border-gray-500 text-xs text-gray-500 font-medium hover:bg-gray-500 hover:text-white">Disabl</div>
-                    <div class="py-1 px-2.5 tag border-gray-500 text-xs text-gray-500 font-medium hover:bg-gray-500 hover:text-white">Disaled</div>
-                    <div class="py-1 px-2.5 tag border-gray-500 text-xs text-gray-500 font-medium hover:bg-gray-500 hover:text-white">Disabledee</div>
-
+                    <div data-i18n="perfumes" onclick="filterProductstag('nuochoa')" class="py-1 px-2.5 tag border-gray-500 text-xs text-gray-500 font-medium hover:bg-gray-500 hover:text-white "></div>
+                    <div data-i18n="watch" onclick="filterProductstag('dongho')" class="py-1 px-2.5 tag border-gray-500 text-xs text-gray-500 font-medium hover:bg-gray-500 hover:text-white"></div>
+                    <div data-i18n="sandal" onclick="filterProductstag('sandal')" class="py-1 px-2.5 tag border-gray-500 text-xs text-gray-500 font-medium hover:bg-gray-500 hover:text-white">sandal</div>
                 </div>
             </div>
 
@@ -89,15 +87,20 @@
                 <a href="product-grid.html"><img class="w-4 h-4" src="../asset/icon/grid-svgrepo-com.svg" alt=""></a>
             </div>
             
-            <div class="grid grid-cols-3 gap-4 place-items-center border-t border-b border-gray-300">
+            <div id="product-display-g" class="grid grid-cols-3 gap-4 place-items-center border-t border-b border-gray-300">
             </div>
+            <ul class="listPage">
+
+            </ul>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="../asset/scripts/navbar.js"></script>
-    <script src="../asset/scripts/renderproduct-grid.js"></script>
     <script src="../asset/scripts/product.js"></script>
     <script src="../asset/scripts/init.js"></script>
+    <script src="../asset/scripts/renderproduct-grid.js"></script>
+    <script src="../asset/scripts/pagination.js"></script>
+    <script src="../asset/scripts/product-grid1.js"></script>
     <script src="../asset/scripts/translate.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>
 </html>
